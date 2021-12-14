@@ -61,14 +61,6 @@ public class EdgeDetection {
         return edgeImg;
     }
 
-    public static BufferedImage getGreyscale2(BufferedImage img){
-        BufferedImage greyed = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_BYTE_GRAY);
-        Graphics g = greyed.getGraphics();
-        g.drawImage(img, 0, 0, null);
-        g.dispose();
-        return greyed;
-    }
-
     public static BufferedImage getGreyscale(BufferedImage img){
         BufferedImage greyed = img;
         for(int y = 0; y < img.getHeight(); y++){
